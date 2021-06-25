@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="/IMAGES/favicon.ico">
+        <title>Task-7</title>
+        <style>
+
+
+            body{
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                min-height: 150vh;
+                background-color: aquamarine;
+
+
+            }
+
+            body::before{
+                content: '';
+                position:absolute;
+                top:0;
+                left:0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(#98f321,#e9e9e9);
+                clip: auto;
+                opacity: 0.7s;
+            }
+            body::after{
+                content: '';
+                position:absolute;
+                top:0;
+                left:0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(#98f321,#e9e9e9);
+                clip: auto;
+                opacity: 0.7s
+            } 
+
+
+            .container{
+                position: relative;
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                max-width: 1200px;
+                flex-wrap: wrap;
+                z-index: 1;
+                top: 100px;
+
+            }
+
+            .container .card{
+                position: relative;
+                width: 900px;
+                height: 900px;
+                margin: 30px;
+                font-family: 'Rubin',sans-serif;
+                box-shadow: 20px 20px 50px  rgba(red, green, blue, alpha);
+                border: 55px;
+                background:rgba(red, green, blue, alpha) ;
+                overflow: hidden;
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                border-top: burlywood;
+                border-left: coral;
+                backdrop-filter: blur(5px);
+
+
+            }
+
+
+            .card:hover{
+                position: relative;
+                bottom: 50px;
+                box-shadow: cornsilk;
+
+                
+            }
+
+            .container .card .contain
+            {
+                padding: 19px;
+                margin: 19px;
+                text-align: center;
+                transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+            }
+            .h2
+            {
+                position:absolute;
+                top: -150px;
+                right: 3px;
+                padding-bottom: 100px;
+                font-size: 8em;
+                color: rgba(red, green, blue, alpha);
+                pointer-events: none
+            }
+            .h3
+            {
+                color:saddlebrown;
+                font-size: 1.8em;
+                margin-top: 100px;
+            }
+            .p
+            {
+                color:silver;
+                font-size: small;
+                padding-bottom: 50px;
+            }
+            .a{
+                background-color: silver;
+                border-radius: 100px;
+                text-decoration: slategray;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+
+            }
+
+            body{
+                font-family: "Avenir Next";
+
+            }
+
+            li{
+                list-style: none;
+            }
+            .header{
+                background: rgba(red, green, blue, alpha);
+                color: rosybrown;
+                height: 90px;
+                position:absolute;
+                justify-content: center;
+                flex-wrap: wrap;
+                top: 0px;
+                width: 100px;
+                left: 0px;
+                position: fixed;
+                top: 0px;
+                z-index: 3;
+                border-radius: 20px;
+            }
+
+
+            .header-logo{
+                float: left;
+                font-size: 36;
+                padding: 20px 40px;
+            }
+
+            .header-list li{
+                float: right;
+                font-size: 110%;
+                padding: 15px 20px 33px 20px;
+                border: azure;
+                padding: 10px;
+                margin: 10px 20px;
+
+            } 
+            .copy-container{
+                width: 100%;
+                float: right;
+                position: absolute;
+                z-index: 1;
+
+            }
+
+            .copy-container h1{
+                font-size: 100px;
+                color:silver;
+                text-align: center;
+
+            }
+
+            .copy-container h1:hover{
+                color: rgb(red, green, blue);
+                transform: rotateX(20deg);
+
+                
+            }
+
+            .copy-container h2{
+                font-size: 60px;
+                margin-bottom: 50px;
+                text-align: center;
+                color: silver;
+                               
+                
+            }
+
+            .copy-container h2:hover{
+                color: rgb(red, green, blue);
+                transform: rotateX(20deg);
+            }
+
+            .copy-container span{
+                color: rosybrown;
+
+            }
+            .glass{
+                position: relative;
+                margin: 300px;
+                margin-bottom: 150px;
+            }
+            
+            .copy-container{
+                top: 100px;
+                bottom: 100px;
+            }
+
+            .btn{
+                background-color: silver;
+                padding: 9px;
+                margin: 9px;
+                border-radius: 100px;
+                width: 50px;
+                margin-top: 150px;
+                
+            }
+
+
+        </style>
+    </head>
+    <body>
+
+        <div class="header">
+            <div class="header-logo"> Docker WebApp </div>
+            <div class="header-list">
+                <ul>
+                    <li>here ashi sharma on the behalf of linux world</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="copy-container">
+            <h1> ON TOP OF AWS <span></span></h1>
+                        
+        </div>
+
+        <div class="main">
+            <div class="glass">
+                <div class="container">
+                    <div class="card">
+                        <div class="contain">
+
+
+                            <h2 class="h2">DOCKER!</h2>
+                            <h3 class="h3"> TYPE YOUR COMMAND HERE! </h3>
+                            <div>
+                                <span style="color: silver; font-style: bolid; border-radius: 100px;">[root@Dockerhost ~]#</span>
+                                <input id="in1" />
+                                <pre><div id="d1" style="color:silver; font-style: bolid; font-family: Avenir Next; ">(Here Is Your Output)</div> </pre>
+
+                                <centre><button onclick="lw()" class="btn">Run</button></centre>
+
+                                                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer></footer>
+        <script>
+            function lw() {
+                // here xhr is a object from XMLHttpRequest() class
+                var i = document.getElementById("in1").value
+
+                var xhr = new XMLHttpRequest();
+                
+                xhr.open("GET", "http://192.168.43.125/cgi-bin/home.py?x=" + i, true);
+
+                xhr.send();
+
+                xhr.onload = function() {
+                    var output = xhr.responseText;
+                    document.getElementById("d1").innerHTML = output;
+                }
+
+            }
+        </script>
+    </body>
+</html> 
